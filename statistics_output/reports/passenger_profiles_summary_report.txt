@@ -1,0 +1,110 @@
+================================================================================
+COMPREHENSIVE DATA ANALYSIS REPORT
+Dataset: passenger_profiles
+Generated: 2025-08-11 14:31:02
+================================================================================
+
+📊 DATASET OVERVIEW
+   Shape: 1,000,000 rows × 18 columns
+   Memory Usage: 202.33 MB
+
+🔍 DATA QUALITY
+   Missing Values: 655,779 (65.58%)
+   Duplicate Rows: 0 (0.00%)
+   Columns with Missing Values:
+     • spend_category: 655,779 (65.58%)
+
+📈 NUMERIC COLUMNS ANALYSIS
+   Number of numeric columns: 5
+
+   📊 age:
+      Range: 18.00 to 80.00
+      Mean: 49.00, Median: 49.00
+      Std Dev: 18.19, Skewness: 0.00
+      Outliers: 0 (0.00%)
+
+   📊 dwell_time:
+      Range: 30.00 to 240.00
+      Mean: 107.92, Median: 112.00
+      Std Dev: 58.85, Skewness: 0.25
+      Outliers: 0 (0.00%)
+
+   📊 average_spend:
+      Range: 0.00 to 4304.58
+      Mean: 983.52, Median: 0.00
+      Std Dev: 1583.00, Skewness: 1.28
+      Outliers: 0 (0.00%)
+
+   📊 num_categories_visited:
+      Range: 0.00 to 2.50
+      Mean: 0.55, Median: 0.00
+      Std Dev: 0.84, Skewness: 1.22
+      Outliers: 0 (0.00%)
+
+   📊 average_spend_log:
+      Range: 0.00 to 8.37
+      Mean: 2.68, Median: 0.00
+      Std Dev: 3.72, Skewness: 0.69
+      Outliers: 0 (0.00%)
+
+📝 CATEGORICAL COLUMNS ANALYSIS
+   Number of categorical columns: 11
+
+   📋 passenger_id:
+      Unique Values: 1,000,000
+      Most Frequent: '0000050d-4657-4b28-9437-98c549ad1bdf' (1 times)
+      Cardinality Ratio: 1.0000
+
+   📋 gender:
+      Unique Values: 3
+      Most Frequent: 'Female' (500,200 times)
+      Cardinality Ratio: 0.0000
+
+   📋 nationality:
+      Unique Values: 10
+      Most Frequent: 'Australia' (100,422 times)
+      Cardinality Ratio: 0.0000
+
+   📋 marital_status:
+      Unique Values: 3
+      Most Frequent: 'Married' (392,965 times)
+      Cardinality Ratio: 0.0000
+
+   📋 passenger_segment:
+      Unique Values: 3
+      Most Frequent: 'Leisure' (400,495 times)
+      Cardinality Ratio: 0.0000
+
+   📋 class_of_travel:
+      Unique Values: 3
+      Most Frequent: 'Economy' (699,139 times)
+      Cardinality Ratio: 0.0000
+
+   📋 income_bracket:
+      Unique Values: 3
+      Most Frequent: 'Mid' (566,775 times)
+      Cardinality Ratio: 0.0000
+
+   📋 purchase_categories:
+      Unique Values: 1,804
+      Most Frequent: '[]' (655,779 times)
+      Cardinality Ratio: 0.0018
+
+   📋 age_group:
+      Unique Values: 5
+      Most Frequent: 'Senior' (238,183 times)
+      Cardinality Ratio: 0.0000
+
+   📋 spend_category:
+      Unique Values: 3
+      Most Frequent: 'Premium' (330,452 times)
+      Cardinality Ratio: 0.0000
+
+   📋 dwell_time_category:
+      Unique Values: 4
+      Most Frequent: 'Extended' (461,822 times)
+      Cardinality Ratio: 0.0000
+
+================================================================================
+End of Report
+================================================================================

@@ -1,0 +1,169 @@
+{
+  "dataset_info": {
+    "name": "esop_transactions",
+    "shape": [
+      10000,
+      6
+    ],
+    "memory_usage_mb": 3.360616683959961,
+    "dtypes": {
+      "store_name": "object",
+      "store_category": "object",
+      "location": "object",
+      "date": "object",
+      "product_id": "object",
+      "net_amount": "float64"
+    }
+  },
+  "data_quality": {
+    "total_missing": 0,
+    "missing_by_column": {
+      "store_name": 0,
+      "store_category": 0,
+      "location": 0,
+      "date": 0,
+      "product_id": 0,
+      "net_amount": 0
+    },
+    "missing_percentage": {
+      "store_name": 0.0,
+      "store_category": 0.0,
+      "location": 0.0,
+      "date": 0.0,
+      "product_id": 0.0,
+      "net_amount": 0.0
+    },
+    "duplicate_rows": 0,
+    "duplicate_percentage": 0.0
+  },
+  "numeric_analysis": {
+    "columns": [
+      "net_amount"
+    ],
+    "summary_statistics": {
+      "net_amount": {
+        "count": 10000.0,
+        "mean": 169.455385,
+        "std": 199.9250579272906,
+        "min": 5.0,
+        "25%": 31.445,
+        "50%": 91.565,
+        "75%": 236.37,
+        "max": 999.18
+      }
+    },
+    "distribution_metrics": {
+      "net_amount": {
+        "skewness": 1.9530380239299066,
+        "kurtosis": 3.7530850916627094,
+        "variance": 39970.0287872305,
+        "std_dev": 199.9250579272906
+      }
+    },
+    "outlier_analysis": {
+      "net_amount": {
+        "outlier_count": 580,
+        "outlier_percentage": 5.800000000000001,
+        "lower_bound": -275.94250000000005,
+        "upper_bound": 543.7575,
+        "Q1": 31.445,
+        "Q3": 236.37,
+        "IQR": 204.925
+      }
+    }
+  },
+  "categorical_analysis": {
+    "store_name": {
+      "unique_count": 10,
+      "most_frequent": "WHSmith",
+      "most_frequent_count": 1032,
+      "least_frequent": "The Body Shop",
+      "least_frequent_count": 966,
+      "top_10_values": {
+        "WHSmith": 1032,
+        "Montblanc": 1006,
+        "Croma Zip": 1005,
+        "Starbucks": 1004,
+        "O2 Spa": 1002,
+        "Delhi Duty Free": 1001,
+        "Chumbak": 998,
+        "Da Milano": 996,
+        "Hamleys": 990,
+        "The Body Shop": 966
+      },
+      "cardinality_ratio": 0.001
+    },
+    "store_category": {
+      "unique_count": 10,
+      "most_frequent": "Books & Stationery",
+      "most_frequent_count": 1032,
+      "least_frequent": "Cosmetics & Skincare",
+      "least_frequent_count": 966,
+      "top_10_values": {
+        "Books & Stationery": 1032,
+        "Luxury Fashion": 1006,
+        "Electronics": 1005,
+        "Food & Beverage": 1004,
+        "Wellness & Spa": 1002,
+        "Duty-Free": 1001,
+        "Souvenirs": 998,
+        "Fashion & Accessories": 996,
+        "Toys & Gifts": 990,
+        "Cosmetics & Skincare": 966
+      },
+      "cardinality_ratio": 0.001
+    },
+    "location": {
+      "unique_count": 1,
+      "most_frequent": "DEL-T3",
+      "most_frequent_count": 10000,
+      "least_frequent": "DEL-T3",
+      "least_frequent_count": 10000,
+      "top_10_values": {
+        "DEL-T3": 10000
+      },
+      "cardinality_ratio": 0.0001
+    },
+    "date": {
+      "unique_count": 9998,
+      "most_frequent": "2025-01-21 08:33:29",
+      "most_frequent_count": 2,
+      "least_frequent": "2024-03-21 07:31:34",
+      "least_frequent_count": 1,
+      "top_10_values": {
+        "2025-01-21 08:33:29": 2,
+        "2025-02-02 04:24:08": 2,
+        "2023-10-20 02:20:33": 1,
+        "2023-08-26 10:02:09": 1,
+        "2024-12-25 13:00:45": 1,
+        "2023-12-11 06:04:26": 1,
+        "2024-05-02 22:32:58": 1,
+        "2024-11-15 23:36:33": 1,
+        "2025-06-08 22:06:10": 1,
+        "2024-01-11 05:06:45": 1
+      },
+      "cardinality_ratio": 0.9998
+    },
+    "product_id": {
+      "unique_count": 20,
+      "most_frequent": "PROD-FB-001",
+      "most_frequent_count": 540,
+      "least_frequent": "PROD-FB-002",
+      "least_frequent_count": 464,
+      "top_10_values": {
+        "PROD-FB-001": 540,
+        "PROD-BS-002": 517,
+        "PROD-BS-001": 515,
+        "PROD-SP-002": 515,
+        "PROD-EL-002": 510,
+        "PROD-DF-001": 509,
+        "PROD-SV-002": 509,
+        "PROD-LF-001": 507,
+        "PROD-FA-002": 504,
+        "PROD-TY-001": 504
+      },
+      "cardinality_ratio": 0.002
+    }
+  },
+  "datetime_analysis": {}
+}

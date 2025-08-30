@@ -1,0 +1,423 @@
+{
+  "dataset_info": {
+    "name": "passenger_profiles",
+    "shape": [
+      1000000,
+      18
+    ],
+    "memory_usage_mb": 202.33269023895264,
+    "dtypes": {
+      "passenger_id": "object",
+      "age": "int64",
+      "gender": "category",
+      "nationality": "category",
+      "marital_status": "category",
+      "passenger_segment": "category",
+      "class_of_travel": "category",
+      "income_bracket": "category",
+      "loyalty_program_member": "bool",
+      "dwell_time": "int64",
+      "purchase_categories": "object",
+      "average_spend": "float64",
+      "made_purchase": "bool",
+      "num_categories_visited": "float64",
+      "age_group": "category",
+      "spend_category": "category",
+      "average_spend_log": "float64",
+      "dwell_time_category": "category"
+    }
+  },
+  "data_quality": {
+    "total_missing": 655779,
+    "missing_by_column": {
+      "passenger_id": 0,
+      "age": 0,
+      "gender": 0,
+      "nationality": 0,
+      "marital_status": 0,
+      "passenger_segment": 0,
+      "class_of_travel": 0,
+      "income_bracket": 0,
+      "loyalty_program_member": 0,
+      "dwell_time": 0,
+      "purchase_categories": 0,
+      "average_spend": 0,
+      "made_purchase": 0,
+      "num_categories_visited": 0,
+      "age_group": 0,
+      "spend_category": 655779,
+      "average_spend_log": 0,
+      "dwell_time_category": 0
+    },
+    "missing_percentage": {
+      "passenger_id": 0.0,
+      "age": 0.0,
+      "gender": 0.0,
+      "nationality": 0.0,
+      "marital_status": 0.0,
+      "passenger_segment": 0.0,
+      "class_of_travel": 0.0,
+      "income_bracket": 0.0,
+      "loyalty_program_member": 0.0,
+      "dwell_time": 0.0,
+      "purchase_categories": 0.0,
+      "average_spend": 0.0,
+      "made_purchase": 0.0,
+      "num_categories_visited": 0.0,
+      "age_group": 0.0,
+      "spend_category": 65.5779,
+      "average_spend_log": 0.0,
+      "dwell_time_category": 0.0
+    },
+    "duplicate_rows": 0,
+    "duplicate_percentage": 0.0
+  },
+  "numeric_analysis": {
+    "columns": [
+      "age",
+      "dwell_time",
+      "average_spend",
+      "num_categories_visited",
+      "average_spend_log"
+    ],
+    "summary_statistics": {
+      "age": {
+        "count": 1000000.0,
+        "mean": 49.003527,
+        "std": 18.185707005233816,
+        "min": 18.0,
+        "25%": 33.0,
+        "50%": 49.0,
+        "75%": 65.0,
+        "max": 80.0
+      },
+      "dwell_time": {
+        "count": 1000000.0,
+        "mean": 107.919887,
+        "std": 58.84908036767855,
+        "min": 30.0,
+        "25%": 49.0,
+        "50%": 112.0,
+        "75%": 155.0,
+        "max": 240.0
+      },
+      "average_spend": {
+        "count": 1000000.0,
+        "mean": 983.5222270412498,
+        "std": 1582.9969401775902,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 1721.8325,
+        "max": 4304.581249999999
+      },
+      "num_categories_visited": {
+        "count": 1000000.0,
+        "mean": 0.5505225,
+        "std": 0.8435955420977453,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 1.0,
+        "max": 2.5
+      },
+      "average_spend_log": {
+        "count": 1000000.0,
+        "mean": 2.676004864994309,
+        "std": 3.715870492289528,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 7.451725017637822,
+        "max": 8.367667425169403
+      }
+    },
+    "distribution_metrics": {
+      "age": {
+        "skewness": 0.0009507676294454116,
+        "kurtosis": -1.2006456837117305,
+        "variance": 330.71993928021027,
+        "std_dev": 18.185707005233816
+      },
+      "dwell_time": {
+        "skewness": 0.25302582282583225,
+        "kurtosis": -1.1426537678075241,
+        "variance": 3463.2142601214896,
+        "std_dev": 58.84908036767855
+      },
+      "average_spend": {
+        "skewness": 1.277376480458143,
+        "kurtosis": -0.03436527726281424,
+        "variance": 2505879.312611613,
+        "std_dev": 1582.9969401775902
+      },
+      "num_categories_visited": {
+        "skewness": 1.2158853424226563,
+        "kurtosis": -0.006386615406124729,
+        "variance": 0.7116534386471888,
+        "std_dev": 0.8435955420977453
+      },
+      "average_spend_log": {
+        "skewness": 0.6906859902951726,
+        "kurtosis": -1.481538388293784,
+        "variance": 13.80769351546802,
+        "std_dev": 3.715870492289528
+      }
+    },
+    "outlier_analysis": {
+      "age": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -15.0,
+        "upper_bound": 113.0,
+        "Q1": 33.0,
+        "Q3": 65.0,
+        "IQR": 32.0
+      },
+      "dwell_time": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -110.0,
+        "upper_bound": 314.0,
+        "Q1": 49.0,
+        "Q3": 155.0,
+        "IQR": 106.0
+      },
+      "average_spend": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -2582.7487499999997,
+        "upper_bound": 4304.581249999999,
+        "Q1": 0.0,
+        "Q3": 1721.8325,
+        "IQR": 1721.8325
+      },
+      "num_categories_visited": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -1.5,
+        "upper_bound": 2.5,
+        "Q1": 0.0,
+        "Q3": 1.0,
+        "IQR": 1.0
+      },
+      "average_spend_log": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -11.177587526456733,
+        "upper_bound": 18.629312544094553,
+        "Q1": 0.0,
+        "Q3": 7.451725017637822,
+        "IQR": 7.451725017637822
+      }
+    },
+    "correlation_matrix": {
+      "age": {
+        "age": 1.0,
+        "dwell_time": -0.00019503203497717015,
+        "average_spend": -0.03659171604443642,
+        "num_categories_visited": -0.00017819096775801758,
+        "average_spend_log": -0.008051018371269468
+      },
+      "dwell_time": {
+        "age": -0.00019503203497717015,
+        "dwell_time": 1.0,
+        "average_spend": -0.15051852380421077,
+        "num_categories_visited": -0.0967996281791548,
+        "average_spend_log": -0.12114818875853303
+      },
+      "average_spend": {
+        "age": -0.03659171604443642,
+        "dwell_time": -0.15051852380421077,
+        "average_spend": 1.0,
+        "num_categories_visited": 0.771970225470292,
+        "average_spend_log": 0.9060441669211523
+      },
+      "num_categories_visited": {
+        "age": -0.00017819096775801758,
+        "dwell_time": -0.0967996281791548,
+        "average_spend": 0.771970225470292,
+        "num_categories_visited": 1.0,
+        "average_spend_log": 0.8952772017610553
+      },
+      "average_spend_log": {
+        "age": -0.008051018371269468,
+        "dwell_time": -0.12114818875853303,
+        "average_spend": 0.9060441669211523,
+        "num_categories_visited": 0.8952772017610553,
+        "average_spend_log": 1.0
+      }
+    }
+  },
+  "categorical_analysis": {
+    "passenger_id": {
+      "unique_count": 1000000,
+      "most_frequent": "0000050d-4657-4b28-9437-98c549ad1bdf",
+      "most_frequent_count": 1,
+      "least_frequent": "28fb513a-003f-4921-ba05-e999fad5c970",
+      "least_frequent_count": 1,
+      "top_10_values": {
+        "a7ba61f4-b42b-4d6a-b8fd-1c716aff7b9d": 1,
+        "ea961891-bb15-4229-b569-689a9a7c999f": 1,
+        "c9df1de3-8482-4e35-b805-0cc0d29c51fc": 1,
+        "4e8185f6-4db8-4c18-98d1-1474583dadcf": 1,
+        "69aaa43b-18de-4af5-96ba-b259b5106d08": 1,
+        "9d016d56-42b5-400a-9573-39a8ac27fd6b": 1,
+        "5e186533-7a25-4e90-9a63-fb9eb43155b5": 1,
+        "d4fb6207-aaa6-41b4-89a3-15581d1f5334": 1,
+        "8bccbde4-605e-4c76-a86b-b71fa8aca584": 1,
+        "3fc7659a-e143-4c14-ac78-b33e6283a4a9": 1
+      },
+      "cardinality_ratio": 1.0
+    },
+    "gender": {
+      "unique_count": 3,
+      "most_frequent": "Female",
+      "most_frequent_count": 500200,
+      "least_frequent": "Other",
+      "least_frequent_count": 19841,
+      "top_10_values": {
+        "Female": 500200,
+        "Male": 479959,
+        "Other": 19841
+      },
+      "cardinality_ratio": 3e-06
+    },
+    "nationality": {
+      "unique_count": 10,
+      "most_frequent": "Australia",
+      "most_frequent_count": 100422,
+      "least_frequent": "Canada",
+      "least_frequent_count": 99633,
+      "top_10_values": {
+        "Australia": 100422,
+        "Singapore": 100163,
+        "Germany": 100127,
+        "France": 100117,
+        "Sri Lanka": 100103,
+        "UK": 100077,
+        "USA": 99923,
+        "India": 99784,
+        "UAE": 99651,
+        "Canada": 99633
+      },
+      "cardinality_ratio": 1e-05
+    },
+    "marital_status": {
+      "unique_count": 3,
+      "most_frequent": "Married",
+      "most_frequent_count": 392965,
+      "least_frequent": "Single",
+      "least_frequent_count": 251506,
+      "top_10_values": {
+        "Married": 392965,
+        "With Children": 355529,
+        "Single": 251506
+      },
+      "cardinality_ratio": 3e-06
+    },
+    "passenger_segment": {
+      "unique_count": 3,
+      "most_frequent": "Leisure",
+      "most_frequent_count": 400495,
+      "least_frequent": "Family",
+      "least_frequent_count": 199092,
+      "top_10_values": {
+        "Leisure": 400495,
+        "Business": 400413,
+        "Family": 199092
+      },
+      "cardinality_ratio": 3e-06
+    },
+    "class_of_travel": {
+      "unique_count": 3,
+      "most_frequent": "Economy",
+      "most_frequent_count": 699139,
+      "least_frequent": "First",
+      "least_frequent_count": 50151,
+      "top_10_values": {
+        "Economy": 699139,
+        "Business": 250710,
+        "First": 50151
+      },
+      "cardinality_ratio": 3e-06
+    },
+    "income_bracket": {
+      "unique_count": 3,
+      "most_frequent": "Mid",
+      "most_frequent_count": 566775,
+      "least_frequent": "High",
+      "least_frequent_count": 181376,
+      "top_10_values": {
+        "Mid": 566775,
+        "Low": 251849,
+        "High": 181376
+      },
+      "cardinality_ratio": 3e-06
+    },
+    "purchase_categories": {
+      "unique_count": 1804,
+      "most_frequent": "[]",
+      "most_frequent_count": 655779,
+      "least_frequent": "['Luxury', 'Kids/Toys', 'Personal Care']",
+      "least_frequent_count": 1,
+      "top_10_values": {
+        "[]": 655779,
+        "['Souvenirs']": 21417,
+        "['Books & Magazines']": 20599,
+        "['Electronics']": 20342,
+        "['Duty-Free Liquor']": 16426,
+        "['Fashion']": 15832,
+        "['Food & Beverages']": 14966,
+        "['Cosmetics & Skincare']": 14945,
+        "['Travel Essentials']": 13541,
+        "['Luxury']": 11684
+      },
+      "cardinality_ratio": 0.001804
+    },
+    "age_group": {
+      "unique_count": 5,
+      "most_frequent": "Senior",
+      "most_frequent_count": 238183,
+      "least_frequent": "Young",
+      "least_frequent_count": 126660,
+      "top_10_values": {
+        "Senior": 238183,
+        "Elderly": 238169,
+        "Middle-aged": 237733,
+        "Adult": 159255,
+        "Young": 126660
+      },
+      "cardinality_ratio": 5e-06
+    },
+    "spend_category": {
+      "unique_count": 3,
+      "most_frequent": "Premium",
+      "most_frequent_count": 330452,
+      "least_frequent": "Low",
+      "least_frequent_count": 0,
+      "top_10_values": {
+        "Premium": 330452,
+        "High": 13444,
+        "Medium": 325,
+        "Low": 0
+      },
+      "cardinality_ratio": 3e-06
+    },
+    "dwell_time_category": {
+      "unique_count": 4,
+      "most_frequent": "Extended",
+      "most_frequent_count": 461822,
+      "least_frequent": "Short",
+      "least_frequent_count": 12967,
+      "top_10_values": {
+        "Extended": 461822,
+        "Medium": 387446,
+        "Long": 137765,
+        "Short": 12967
+      },
+      "cardinality_ratio": 4e-06
+    }
+  },
+  "datetime_analysis": {}
+}
