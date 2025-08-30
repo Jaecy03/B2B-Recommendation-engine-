@@ -39,7 +39,7 @@ python scripts/ingestion.py
 
 **Output:**
 - `airport_data.db` - SQLite database with indexed tables
-- Ingestion logs and performance metrics
+- Ingestion logs and performance metrics. Find airport_data.db by downloading this zip file: https://drive.google.com/file/d/1Y0IhyYPKlDQ3Egz-y-chlB1oF1JTIT95/view?usp=sharing
 
 ### 2. Data Preprocessing
 ```bash
@@ -56,7 +56,7 @@ python scripts/preprocessing.py
 
 **Output:**
 - `processed_data/` - Clean datasets ready for analysis
-- Preprocessing logs with detailed statistics
+- Preprocessing logs with detailed statistics. Find all the processed data here, by downloading the zip file: https://drive.google.com/file/d/1Uo_j5CVM8dCpYL2FtSx6zjrofsHvtp_X/view?usp=sharing
 
 ### 3. Statistical Analysis
 ```bash
@@ -83,6 +83,8 @@ python scripts/basic_statistics.py
 | Flight Info | 1,000,000 | 16 | 232MB | SQLite |
 | Passenger Profiles | 1,000,000 | 18 | 202MB | SQLite |
 | ESOP Transactions | 10,000 | 6 | 3.4MB | In-Memory |
+
+Find all 4 original datasets here: https://drive.google.com/file/d/1465Kl0HaMTjuubeNJGSMzqH3bYNeSJA4/view?usp=sharing
 
 ## 🔧 Key Features
 
