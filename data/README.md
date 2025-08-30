@@ -1,0 +1,1 @@
+# Data Directory\n\nPlace your CSV files here:\n- airport_traffic.csv\n- flight_info.csv.csv\n- passenger_profiles.csv\n- esop_transactions.csv\n\nNote: Large data files are excluded from git. Download them separately.
