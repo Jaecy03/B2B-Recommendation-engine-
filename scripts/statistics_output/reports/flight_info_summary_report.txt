@@ -1,0 +1,101 @@
+================================================================================
+COMPREHENSIVE DATA ANALYSIS REPORT
+Dataset: flight_info
+Generated: 2025-08-11 14:30:57
+================================================================================
+
+📊 DATASET OVERVIEW
+   Shape: 1,000,000 rows × 16 columns
+   Memory Usage: 231.74 MB
+
+🔍 DATA QUALITY
+   Missing Values: 0 (0.00%)
+   Duplicate Rows: 0 (0.00%)
+
+📈 NUMERIC COLUMNS ANALYSIS
+   Number of numeric columns: 6
+
+   📊 passenger_count:
+      Range: 92.50 to 232.50
+      Mean: 159.21, Median: 170.00
+      Std Dev: 29.64, Skewness: -0.56
+      Outliers: 0 (0.00%)
+
+   📊 delay_minutes:
+      Range: 0.00 to 86.00
+      Mean: 35.17, Median: 33.00
+      Std Dev: 20.00, Skewness: 0.59
+      Outliers: 0 (0.00%)
+
+   📊 actual_delay:
+      Range: 0.00 to 200.00
+      Mean: 35.65, Median: 33.00
+      Std Dev: 21.52, Skewness: 1.05
+      Outliers: 27,193 (2.72%)
+
+   📊 scheduled_hour:
+      Range: 0.00 to 23.00
+      Mean: 13.07, Median: 13.00
+      Std Dev: 4.46, Skewness: -0.11
+      Outliers: 0 (0.00%)
+
+   📊 scheduled_day_of_week:
+      Range: 0.00 to 6.00
+      Mean: 3.00, Median: 3.00
+      Std Dev: 2.00, Skewness: 0.00
+      Outliers: 0 (0.00%)
+
+   📊 passenger_count_log:
+      Range: 4.54 to 5.45
+      Mean: 5.06, Median: 5.14
+      Std Dev: 0.21, Skewness: -1.23
+      Outliers: 96,397 (9.64%)
+
+📝 CATEGORICAL COLUMNS ANALYSIS
+   Number of categorical columns: 6
+
+   📋 flight_id:
+      Unique Values: 5,400
+      Most Frequent: 'SG186' (242 times)
+      Cardinality Ratio: 0.0054
+
+   📋 airline:
+      Unique Values: 6
+      Most Frequent: 'IndiGo' (167,029 times)
+      Cardinality Ratio: 0.0000
+
+   📋 origin:
+      Unique Values: 11
+      Most Frequent: 'CCU' (91,437 times)
+      Cardinality Ratio: 0.0000
+
+   📋 destination:
+      Unique Values: 19
+      Most Frequent: 'DEL' (89,514 times)
+      Cardinality Ratio: 0.0000
+
+   📋 flight_type:
+      Unique Values: 2
+      Most Frequent: 'Domestic' (963,762 times)
+      Cardinality Ratio: 0.0000
+
+   📋 aircraft_type:
+      Unique Values: 6
+      Most Frequent: 'A320' (578,320 times)
+      Cardinality Ratio: 0.0000
+
+📅 DATETIME COLUMNS ANALYSIS
+
+   🕒 scheduled_time:
+      Date Range: 2024-07-24 00:00:00 to 2025-07-24 23:45:00
+      Span: 365 days
+      Unique Dates: 34,401
+
+   🕒 actual_time:
+      Date Range: 2024-07-24 00:51:00 to 2025-07-25 01:54:00
+      Span: 366 days
+      Unique Dates: 361,915
+
+================================================================================
+End of Report
+================================================================================

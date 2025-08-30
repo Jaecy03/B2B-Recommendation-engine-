@@ -1,0 +1,407 @@
+{
+  "dataset_info": {
+    "name": "airport_traffic",
+    "shape": [
+      1000000,
+      15
+    ],
+    "memory_usage_mb": 273.7006950378418,
+    "dtypes": {
+      "timestamp": "datetime64[ns]",
+      "airport": "object",
+      "terminal_id": "category",
+      "zone_id": "object",
+      "passenger_count": "int64",
+      "flight_id": "object",
+      "passenger_type": "category",
+      "flight_type": "category",
+      "destination": "object",
+      "hour": "int32",
+      "day_of_week": "int32",
+      "month": "int32",
+      "is_weekend": "bool",
+      "time_period": "category",
+      "passenger_count_log": "float64"
+    }
+  },
+  "data_quality": {
+    "total_missing": 41532,
+    "missing_by_column": {
+      "timestamp": 0,
+      "airport": 0,
+      "terminal_id": 0,
+      "zone_id": 0,
+      "passenger_count": 0,
+      "flight_id": 0,
+      "passenger_type": 0,
+      "flight_type": 0,
+      "destination": 0,
+      "hour": 0,
+      "day_of_week": 0,
+      "month": 0,
+      "is_weekend": 0,
+      "time_period": 41532,
+      "passenger_count_log": 0
+    },
+    "missing_percentage": {
+      "timestamp": 0.0,
+      "airport": 0.0,
+      "terminal_id": 0.0,
+      "zone_id": 0.0,
+      "passenger_count": 0.0,
+      "flight_id": 0.0,
+      "passenger_type": 0.0,
+      "flight_type": 0.0,
+      "destination": 0.0,
+      "hour": 0.0,
+      "day_of_week": 0.0,
+      "month": 0.0,
+      "is_weekend": 0.0,
+      "time_period": 4.1532,
+      "passenger_count_log": 0.0
+    },
+    "duplicate_rows": 0,
+    "duplicate_percentage": 0.0
+  },
+  "numeric_analysis": {
+    "columns": [
+      "passenger_count",
+      "hour",
+      "day_of_week",
+      "month",
+      "passenger_count_log"
+    ],
+    "summary_statistics": {
+      "passenger_count": {
+        "count": 1000000.0,
+        "mean": 49.130168,
+        "std": 41.52987104509194,
+        "min": 1.0,
+        "25%": 14.0,
+        "50%": 41.0,
+        "75%": 72.0,
+        "max": 159.0
+      },
+      "hour": {
+        "count": 1000000.0,
+        "mean": 11.498533,
+        "std": 6.923595293204445,
+        "min": 0.0,
+        "25%": 6.0,
+        "50%": 11.0,
+        "75%": 18.0,
+        "max": 23.0
+      },
+      "day_of_week": {
+        "count": 1000000.0,
+        "mean": 3.00039,
+        "std": 1.997960920475633,
+        "min": 0.0,
+        "25%": 1.0,
+        "50%": 3.0,
+        "75%": 5.0,
+        "max": 6.0
+      },
+      "month": {
+        "count": 1000000.0,
+        "mean": 6.5291,
+        "std": 3.447170009294737,
+        "min": 1.0,
+        "25%": 4.0,
+        "50%": 7.0,
+        "75%": 10.0,
+        "max": 12.0
+      },
+      "passenger_count_log": {
+        "count": 1000000.0,
+        "mean": 3.4031976011095666,
+        "std": 1.1981928694128725,
+        "min": 0.6931471805599453,
+        "25%": 2.70805020110221,
+        "50%": 3.7376696182833684,
+        "75%": 4.290459441148391,
+        "max": 5.075173815233827
+      }
+    },
+    "distribution_metrics": {
+      "passenger_count": {
+        "skewness": 0.9463910782929341,
+        "kurtosis": 0.2788713494685786,
+        "variance": 1724.7301890219658,
+        "std_dev": 41.52987104509194
+      },
+      "hour": {
+        "skewness": 0.0005993050088086177,
+        "kurtosis": -1.204968687228002,
+        "variance": 47.936171784082745,
+        "std_dev": 6.923595293204445
+      },
+      "day_of_week": {
+        "skewness": -0.0024761303971463106,
+        "kurtosis": -1.2469243989717251,
+        "variance": 3.9918478397478387,
+        "std_dev": 1.997960920475633
+      },
+      "month": {
+        "skewness": -0.012132961879856498,
+        "kurtosis": -1.2057217553194701,
+        "variance": 11.882981072981076,
+        "std_dev": 3.447170009294737
+      },
+      "passenger_count_log": {
+        "skewness": -0.7680262493352117,
+        "kurtosis": -0.4689553153599211,
+        "variance": 1.435666152311853,
+        "std_dev": 1.1981928694128725
+      }
+    },
+    "outlier_analysis": {
+      "passenger_count": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -73.0,
+        "upper_bound": 159.0,
+        "Q1": 14.0,
+        "Q3": 72.0,
+        "IQR": 58.0
+      },
+      "hour": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -12.0,
+        "upper_bound": 36.0,
+        "Q1": 6.0,
+        "Q3": 18.0,
+        "IQR": 12.0
+      },
+      "day_of_week": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -5.0,
+        "upper_bound": 11.0,
+        "Q1": 1.0,
+        "Q3": 5.0,
+        "IQR": 4.0
+      },
+      "month": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": -5.0,
+        "upper_bound": 19.0,
+        "Q1": 4.0,
+        "Q3": 10.0,
+        "IQR": 6.0
+      },
+      "passenger_count_log": {
+        "outlier_count": 0,
+        "outlier_percentage": 0.0,
+        "lower_bound": 0.3344363410329385,
+        "upper_bound": 6.6640733012176625,
+        "Q1": 2.70805020110221,
+        "Q3": 4.290459441148391,
+        "IQR": 1.5824092400461809
+      }
+    },
+    "correlation_matrix": {
+      "passenger_count": {
+        "passenger_count": 1.0,
+        "hour": 0.1535054360896786,
+        "day_of_week": -0.016176609185901126,
+        "month": 0.035547663479300495,
+        "passenger_count_log": 0.863841938293212
+      },
+      "hour": {
+        "passenger_count": 0.1535054360896786,
+        "hour": 1.0,
+        "day_of_week": 2.5921390938115354e-05,
+        "month": -0.00021715576868838277,
+        "passenger_count_log": 0.2562869006567108
+      },
+      "day_of_week": {
+        "passenger_count": -0.016176609185901126,
+        "hour": 2.5921390938115354e-05,
+        "day_of_week": 1.0,
+        "month": -0.0033569519713156203,
+        "passenger_count_log": -0.008357681107712376
+      },
+      "month": {
+        "passenger_count": 0.035547663479300495,
+        "hour": -0.00021715576868838277,
+        "day_of_week": -0.0033569519713156203,
+        "month": 1.0,
+        "passenger_count_log": 0.02375992418995407
+      },
+      "passenger_count_log": {
+        "passenger_count": 0.863841938293212,
+        "hour": 0.2562869006567108,
+        "day_of_week": -0.008357681107712376,
+        "month": 0.02375992418995407,
+        "passenger_count_log": 1.0
+      }
+    }
+  },
+  "categorical_analysis": {
+    "airport": {
+      "unique_count": 4,
+      "most_frequent": "BOM",
+      "most_frequent_count": 258885,
+      "least_frequent": "BLR",
+      "least_frequent_count": 242157,
+      "top_10_values": {
+        "BOM": 258885,
+        "HYD": 254759,
+        "DEL": 244199,
+        "BLR": 242157
+      },
+      "cardinality_ratio": 4e-06
+    },
+    "terminal_id": {
+      "unique_count": 3,
+      "most_frequent": "T1",
+      "most_frequent_count": 566482,
+      "least_frequent": "T3",
+      "least_frequent_count": 117829,
+      "top_10_values": {
+        "T1": 566482,
+        "T2": 315689,
+        "T3": 117829
+      },
+      "cardinality_ratio": 3e-06
+    },
+    "zone_id": {
+      "unique_count": 6,
+      "most_frequent": "Gates",
+      "most_frequent_count": 222887,
+      "least_frequent": "Lounge",
+      "least_frequent_count": 65286,
+      "top_10_values": {
+        "Gates": 222887,
+        "Security": 222792,
+        "Check-in": 222220,
+        "Retail": 201224,
+        "Immigration": 65591,
+        "Lounge": 65286
+      },
+      "cardinality_ratio": 6e-06
+    },
+    "flight_id": {
+      "unique_count": 6300,
+      "most_frequent": "EM893",
+      "most_frequent_count": 214,
+      "least_frequent": "G8939",
+      "least_frequent_count": 111,
+      "top_10_values": {
+        "EM893": 214,
+        "UK435": 206,
+        "EM208": 205,
+        "G8806": 205,
+        "G8715": 202,
+        "6E935": 202,
+        "G8220": 200,
+        "G8885": 200,
+        "6E462": 200,
+        "AI580": 198
+      },
+      "cardinality_ratio": 0.0063
+    },
+    "passenger_type": {
+      "unique_count": 3,
+      "most_frequent": "business",
+      "most_frequent_count": 571516,
+      "least_frequent": "family",
+      "least_frequent_count": 178556,
+      "top_10_values": {
+        "business": 571516,
+        "leisure": 249928,
+        "family": 178556
+      },
+      "cardinality_ratio": 3e-06
+    },
+    "flight_type": {
+      "unique_count": 2,
+      "most_frequent": "Domestic",
+      "most_frequent_count": 795955,
+      "least_frequent": "International",
+      "least_frequent_count": 204045,
+      "top_10_values": {
+        "Domestic": 795955,
+        "International": 204045
+      },
+      "cardinality_ratio": 2e-06
+    },
+    "destination": {
+      "unique_count": 4,
+      "most_frequent": "DEL",
+      "most_frequent_count": 260869,
+      "least_frequent": "HYD",
+      "least_frequent_count": 244728,
+      "top_10_values": {
+        "DEL": 260869,
+        "BOM": 247615,
+        "BLR": 246788,
+        "HYD": 244728
+      },
+      "cardinality_ratio": 4e-06
+    },
+    "time_period": {
+      "unique_count": 4,
+      "most_frequent": "Morning",
+      "most_frequent_count": 250401,
+      "least_frequent": "Evening",
+      "least_frequent_count": 208622,
+      "top_10_values": {
+        "Morning": 250401,
+        "Night": 250047,
+        "Afternoon": 249398,
+        "Evening": 208622
+      },
+      "cardinality_ratio": 4e-06
+    }
+  },
+  "datetime_analysis": {
+    "timestamp": {
+      "min_date": "2024-07-25 05:20:35.089569",
+      "max_date": "2025-07-25 23:04:22.050624",
+      "date_range_days": 365,
+      "unique_dates": 1000000,
+      "most_common_date": "2024-07-25 05:20:35.089569",
+      "patterns": {
+        "hour_distribution": {
+          "8": 41990,
+          "3": 41919,
+          "10": 41895,
+          "19": 41877,
+          "2": 41852,
+          "1": 41794,
+          "20": 41783,
+          "18": 41753,
+          "21": 41728,
+          "14": 41723
+        },
+        "day_of_week_distribution": {
+          "4": 144323,
+          "3": 143524,
+          "0": 142852,
+          "5": 142547,
+          "1": 142469,
+          "6": 142188,
+          "2": 142097
+        },
+        "month_distribution": {
+          "7": 86091,
+          "10": 85119,
+          "12": 85090,
+          "1": 84915,
+          "3": 84784,
+          "8": 84774,
+          "5": 84567,
+          "9": 82096,
+          "4": 82032,
+          "11": 81999,
+          "6": 81963,
+          "2": 76570
+        }
+      }
+    }
+  }
+}
